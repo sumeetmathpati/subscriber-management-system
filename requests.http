@@ -1,0 +1,32 @@
+# Get all users
+
+GET http://127.0.0.1:8000/user?skip=0&limit=100
+
+###
+
+GET http://127.0.0.1:8000/user/1
+
+###
+
+POST  http://127.0.0.1:8000/user
+Content-Type: application/json
+
+{
+    "name": "Sumeet",
+    "email": "s@g.com",
+    "password": "123"
+}
+
+###
+
+DELETE http://127.0.0.1:8000/user/1
+
+###
+
+POST  http://127.0.0.1:8000/app
+Content-Type: application/json
+
+{
+    "name": "app1",
+    "owner_email": "s@g.com"
+}
